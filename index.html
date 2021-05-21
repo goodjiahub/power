@@ -1,55 +1,125 @@
 <html>
-<head>
-<meta charset="UTF-8" />
-<script type="text/javascript">
-function showHint(str)
-{
-var xmlhttp;
-
-        if (window.XMLHttpRequest)
-          {// code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp=new XMLHttpRequest();
-          }
-        else
-          {// code for IE6, IE5
-          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-          }
-        xmlhttp.onreadystatechange=function()
-          {
-                  if (xmlhttp.readyState==4 && xmlhttp.status==200)      
-                  {
-                        var result=xmlhttp.responseText;
-                        var obj = JSON.parse(result);//解析json字串為json物件形式
-                                                
-                        var html = '<table border=1 width=100%>';//
-                        
-                        for (var i = 0; i < obj.length; i ++ ) {//
-                                html  += '<tr>';//
-                                for(j=0;j<obj[i].data.length;j++)
-                                {
-                                  html+= '<td>'+obj[i].data[j]+'</td>'; 
-                                }
-                                html  += '</tr>';            
-                        }
-                        html+="</table>";
-                        
-                        document.getElementById("order_status").innerHTML=html;
-                        if(obj.length==1) //只有一筆代表查不到資料
-                                alert('查無資料');
-                  }
-
-          }
-    var url="https://script.google.com/macros/s/AKfycbwG48k5vsgFORK5owu6mVs7QUwK673mutd3wmDTrlR1bgUXhiipN8VF_REettZRXQNr/exec";
-        xmlhttp.open("get",url+"?uid="+encodeURIComponent(str),true);
-        xmlhttp.send();
-}
-</script>
-</head>
+<head></head>
 <body>
-
-輸入購買者身分證號：<input type="text" id="uid" />
-<input type="button" name="inq" value="查詢" onclick="showHint(uid.value);"></br>
-
-<span id="order_status"></span>
+            <p>2021/05/22 02:41:32
+</p>
+<table align="center" border="1" class="table table-hover">
+            <tr><td colspan="11" style="background-color:#B2D3EE;"><center>�q��<center></td></tr>
+            <tr>
+                <td style="background-color:#B2D3EE;" rowspan="2" ><center>2F</center></td>
+                <td style="background-color:#F7C45F;"><center>721</center></td>
+                <td style="background-color:#F7C45F;"><center>722</center></td>
+                <td style="background-color:#F7C45F;"><center>723</center></td>
+                <td style="background-color:#F7C45F;"><center>724</center></td>
+                <td style="background-color:#F7C45F;"><center>725</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#E7CEBF;"><center>200.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>140.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>163.6</center></td>
+                <td style="background-color:#E7CEBF;"><center>43.4</center></td>
+                <td style="background-color:#E7CEBF;"><center>166.0</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#B2D3EE;" rowspan="2" ><center>3F</center></td>
+                <td style="background-color:#F7C45F;"><center>741</center></td>
+                <td style="background-color:#F7C45F;"><center>742</center></td>
+                <td style="background-color:#F7C45F;"><center>743</center></td>
+                <td style="background-color:#F7C45F;"><center>744</center></td>
+                <td style="background-color:#F7C45F;"><center>745</center></td>
+                <td style="background-color:#F7C45F;"><center>541</center></td>
+                <td style="background-color:#F7C45F;"><center>542</center></td>
+                <td style="background-color:#F7C45F;"><center>543</center></td>
+                <td style="background-color:#F7C45F;"><center>544</center></td>
+                <td style="background-color:#F7C45F;"><center>545</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#E7CEBF;"><center>208.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>179.3</center></td>
+                <td style="background-color:#E7CEBF;"><center>51.2</center></td>
+                <td style="background-color:#E7CEBF;"><center>90.2</center></td>
+                <td style="background-color:#E7CEBF;"><center>111.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>65.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>28.0</center></td>
+                <td style="background-color:#E7CEBF;"><center>177.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>275.0</center></td>
+                <td style="background-color:#E7CEBF;"><center>148.9</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#B2D3EE;" rowspan="2" ><center>4F</center></td>
+                <td style="background-color:#F7C45F;"><center>751</center></td>
+                <td style="background-color:#F7C45F;"><center>752</center></td>
+                <td style="background-color:#F7C45F;"><center>753</center></td>
+                <td style="background-color:#F7C45F;"><center>754</center></td>
+                <td style="background-color:#F7C45F;"><center>755</center></td>
+                <td style="background-color:#F7C45F;"><center>551</center></td>
+                <td style="background-color:#F7C45F;"><center>552</center></td>
+                <td style="background-color:#F7C45F;"><center>553</center></td>
+                <td style="background-color:#F7C45F;"><center>554</center></td>
+                <td style="background-color:#F7C45F;"><center>555</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#E7CEBF;"><center>47.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>88.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>206.1</center></td>
+                <td style="background-color:#E7CEBF;"><center>211.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>56.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>121.3</center></td>
+                <td style="background-color:#E7CEBF;"><center>69.9</center></td>
+                <td style="background-color:#E7CEBF;"><center>125.4</center></td>
+                <td style="background-color:#E7CEBF;"><center>143.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>31.7</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#B2D3EE;" rowspan="2" ><center>5F</center></td>
+                <td style="background-color:#F7C45F;"><center>761</center></td>
+                <td style="background-color:#F7C45F;"><center>762</center></td>
+                <td style="background-color:#F7C45F;"><center>763</center></td>
+                <td style="background-color:#F7C45F;"><center>764</center></td>
+                <td style="background-color:#F7C45F;"><center>765</center></td>
+                <td style="background-color:#F7C45F;"><center>561</center></td>
+                <td style="background-color:#F7C45F;"><center>562</center></td>
+                <td style="background-color:#F7C45F;"><center>563</center></td>
+                <td style="background-color:#F7C45F;"><center>564</center></td>
+                <td style="background-color:#F7C45F;"><center>565</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#E7CEBF;"><center>45.3</center></td>
+                <td style="background-color:#E7CEBF;"><center>214.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>61.4</center></td>
+                <td style="background-color:#E7CEBF;"><center>204.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>250.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>145.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>80.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>506.9</center></td>
+                <td style="background-color:#E7CEBF;"><center>26.7</center></td>
+                <td style="background-color:#E7CEBF;"><center>28.0</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#B2D3EE;" rowspan="2" ><center>6F</center></td>
+                <td style="background-color:#F7C45F;"><center>771</center></td>
+                <td style="background-color:#F7C45F;"><center>772</center></td>
+                <td style="background-color:#F7C45F;"><center>773</center></td>
+                <td style="background-color:#F7C45F;"><center>774</center></td>
+                <td style="background-color:#F7C45F;"><center>775</center></td>
+                <td style="background-color:#F7C45F;"><center>571</center></td>
+                <td style="background-color:#F7C45F;"><center>572</center></td>
+                <td style="background-color:#F7C45F;"><center>573</center></td>
+                <td style="background-color:#F7C45F;"><center>574</center></td>
+                <td style="background-color:#F7C45F;"><center>575</center></td>
+            </tr>
+            <tr>
+                <td style="background-color:#E7CEBF;"><center>262.1</center></td>
+                <td style="background-color:#E7CEBF;"><center>283.6</center></td>
+                <td style="background-color:#E7CEBF;"><center>286.0</center></td>
+                <td style="background-color:#E7CEBF;"><center>156.1</center></td>
+                <td style="background-color:#E7CEBF;"><center>27.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>30.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>107.1</center></td>
+                <td style="background-color:#E7CEBF;"><center>59.8</center></td>
+                <td style="background-color:#E7CEBF;"><center>76.5</center></td>
+                <td style="background-color:#E7CEBF;"><center>95.8</center></td>
+            </tr>
+        </table>
 </body>
 </html>
